@@ -15,13 +15,16 @@ capacity = @(mass, H2, H3) mass .* (H3 - H2);
 %% H-S & T-S Diagrams
 AXV_3;
 
-CTV_1;
-
-CTV_2;
-
-%% P-V Diagrams
 TXV_1;
 
 TXV_2;
 
-TXV_3;
+%% P-V Diagrams
+CTV_1;
+
+CTV_2;
+
+CTV_3;
+
+%% Superheat in TXV
+superheat;
