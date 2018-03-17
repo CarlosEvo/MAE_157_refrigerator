@@ -9,13 +9,17 @@ end
 
 quality = @(f, g, mix) (mix - f) ./ (g - f);
 mix = @(f, g, x) sum([f, g] .* [1 - x, x]);
+COP = @(H2, H3, H4) (H3 - H2) ./ (H4 - H3);
+capacity = @(mass, H2, H3) mass .* (H3 - H2);
 
+%% H-S & T-S Diagrams
 AXV_3;
 
-TCX_1;
+CTV_1;
 
-TCX_2;
+CTV_2;
 
+%% P-V Diagrams
 TXV_1;
 
 TXV_2;
